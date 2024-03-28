@@ -33,7 +33,7 @@ function calcular() {
         let tc = atvc / totalat
 
         // Exibindo o resultado na div
-        resp.textContent = `Acumulado: ${acumo}  %COTA: ${cota2}  VDCOTA: ${vdcota}  TOTAL AT: ${totalat}  PA: ${pa}  VA: ${va}  %ADIC ${adc}  TC: ${tc}`;
+        resp.textContent = `ACUMULADO: ${acumo},  %COTA: ${cota2},  VDCOTA: ${vdcota},  TOTAL AT: ${totalat},  PA: ${pa},  VA: ${va},  %ADIC ${adc},  TC: ${tc}`;
     } else {
         resp.textContent = "Por favor, insira valores numéricos válidos em todos os campos.";
     }

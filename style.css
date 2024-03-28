@@ -4,7 +4,7 @@
 }
 
 body{
-    padding: 20px 4%;
+    padding: 30px 4%;
 }
 
 .calculovendas{
@@ -16,15 +16,22 @@ body{
 }
 
 .calculovendas input{
-    width: 200px;
-    height: 30px;
+    width: 210px;
+    height: 40px;
     border-radius: 5px;
+    text-align: center;
+    font-size: 17px;
 }
 
 .calacumulo{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.calacumulo h1{
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .calacumulo input{
@@ -44,4 +51,8 @@ body{
 button {
     height: 30px;
     width: 100px;
+}
+
+#resp{
+    font-size: 18px;
 }
