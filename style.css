@@ -32,6 +32,7 @@ body{
 .calacumulo h1{
     font-size: 20px;
     padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .calacumulo input{
@@ -49,10 +50,15 @@ body{
 }
 
 button {
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 105px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+
 }
 
 #resp{
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
