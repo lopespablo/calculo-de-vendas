@@ -24,17 +24,21 @@ function calcular() {
     if (!isNaN(cotas) && !isNaN(diasr) && !isNaN(ultv) && !isNaN(vat) && !isNaN(pecas) && !isNaN(atvc) && !isNaN(atvs) && !isNaN(bolad) ) {
         // Calculando o resultado
         let acumo = ultv + vat;
-        let cota2 = acumo / cotas
-        let vdcota = (cotas - acumo) / diasr
+        let cota2 = (acumo / cotas).toFixed(2)
+        let vdcota = ((cotas - acumo) / diasr).toFixed(2)
         let totalat = atvc + atvs
-        let pa = pecas / atvc
-        let va = vat / atvc
-        let adc = bolad / atvc
-        let tc = atvc / totalat
+        let pa = (pecas / atvc).toFixed(2)
+        let va = (vat / atvc).toFixed(2)
+        let adc = (bolad / atvc).toFixed(2)
+        let tc = (atvc / totalat).toFixed(2)
 
         // Exibindo o resultado na div
-        resp.textContent = `ACUMULADO: ${acumo},  %COTA: ${cota2},  VDCOTA: ${vdcota},  TOTAL AT: ${totalat},  PA: ${pa},  VA: ${va},  %ADIC ${adc},  TC: ${tc}`;
+        resp.innerHTML = `ACUMULADO: <strong>${acumo}</strong>,  %COTA: <strong>${cota2}</strong>,  VDCOTA: <strong>${vdcota}</strong>,  TOTAL AT: <strong>${totalat}</strong>,  PA: <strong>${pa}</strong>,  VA: <strong>${va}</strong>,  %ADIC <strong>${adc}</strong>,  TC: <strong>${tc}</strong>`;
+
+        resp.style.display= 'block'
     } else {
         resp.textContent = "Por favor, insira valores numéricos válidos em todos os campos.";
+
+        resp.style.display= 'block'
     }
 }
